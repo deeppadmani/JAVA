@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Scanner;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,7 +19,7 @@ public class Main {
 //        LearnScanner.Scan();
 //        EvenOdd.CheckEvenOdd();
 //        Calculator.Calc();
-//        LuckyNumber.CheckLuckyNumber();
+        LuckyNumber.CheckLuckyNumber();
 //        EvenOdd.ListEvenNumber();
 //        Calculator.SumTill();
 //        LearningTask.StrictDivisor();
@@ -133,7 +134,7 @@ public class Main {
 
 
 //**************************************** Client ******************************************************/
-        ArrayList<Account> accounts = new ArrayList<>();
+       /*  ArrayList<Account> accounts = new ArrayList<>();
 
         Client client = new Client(100,"Deep","4696055923");
         accounts.add(new Account(1,1000,1.5,client));
@@ -152,7 +153,7 @@ public class Main {
             System.out.println("Account : "+ account.getId()+ ":" );
             System.out.println("W: "+ account.countTransaction('W'));
             System.out.println("D: "+ account.countTransaction('D'));
-        }
+        }*/
 
 //**************************************** Student (Single inheritance) ******************************************************/
 
@@ -172,19 +173,29 @@ public class Main {
 //**************************** Not Support Multilevel inheritance ******************************************
 
 //**************************** Inner Class *****************************************************************
-        OuterClass.Inner in = new OuterClass().new Inner();
-        in.show();
+        //OuterClass.Inner in = new OuterClass().new Inner();
+        //in.show();
 
 //**************************** Anonymous Inner Class & Interface & abstract class ***************************
-        MyClass obj = new MyClass();
-        obj.getAge();
+       // MyClass obj = new MyClass();
+        //obj.getAge();
 
 
 //**************************** equals ***************************
-        String myStr1 = "Hello";
+        /*  String myStr1 = "Hello";
         String myStr2 = "Hello";
         String myStr3 = "Another String";
         System.out.println(myStr1.equals(myStr2));  //true
-        System.out.println(myStr1.equals(myStr3));  //false
+        System.out.println(myStr1.equals(myStr3));  //false*/
+/************************************************************ */
+
+       /*  int[] groupSizes = {3,3,3,3,3,1,3};
+        List_and_HashMap var = new List_and_HashMap();
+        List<List<Integer>> temp = new ArrayList<>();
+        temp = var.groupThePeople(groupSizes);*/
+
+        //Solution Svar;
+        int var = Solution.minDeletions("aaabbbcc");
+        System.out.println(var);
     }
 }
